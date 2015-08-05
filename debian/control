@@ -1,0 +1,14 @@
+Source: python3-socketio-client
+Maintainer: Roy Hyunjin Han <rhh@crosscompute.com>
+Section: python
+Priority: optional
+Build-Depends: python3-setuptools, python3-all, debhelper (>= 9), python3-nose, python3-coverage, python3-requests, python3-six, python3-websocket
+Standards-Version: 3.9.6
+
+Package: python3-socketio-client
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description:  A socket.io client library for Python
+ http://pypi.python.org/pypi/socketIO-client
+ .
+ This version implements the socket.io protocol 0.9.
