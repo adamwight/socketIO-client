@@ -4,4 +4,8 @@
 	dh $@ --with python3 --buildsystem=pybuild
 
 override_dh_auto_test:
-	# Don't call dh_auto_test.
+	npm install -G socket.io@0.9.17
+	npm install -G yargs
+	DEBUG=* nodejs serve-tests.js &
+	sleep 5
+	dh_auto_test
