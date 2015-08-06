@@ -1,7 +1,9 @@
 #!/usr/bin/make -f
 
+export PYBUILD_NAME=socketio-client
+
 %:
-	dh $@ --with python3 --buildsystem=pybuild
+	dh $@ --with python2,python3 --buildsystem=pybuild
 
 override_dh_auto_test:
 	# Don't call dh_auto_test.

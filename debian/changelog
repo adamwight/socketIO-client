@@ -1,4 +1,4 @@
-python3-socketio-client (0.5.6) UNRELEASED; urgency=medium
+python-socketio-client (0.5.6) UNRELEASED; urgency=medium
 
   * Initial version of the package
 
